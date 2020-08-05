@@ -1,3 +1,3 @@
 # Wenhaw.github.io
 
-[Live example](https://example.webrtc.ecl.ntt.com/p2p-media/index.html)
+[Live example](https://Wenhaw.github.io/index.html)
