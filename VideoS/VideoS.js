@@ -15,12 +15,12 @@ const Peer = window.Peer;
 
 
   const getRoomModeByHash = () => (location.hash === '#sfu' ? 'sfu' : 'mesh');
-
   roomMode.textContent = getRoomModeByHash();
   window.addEventListener(
     'hashchange',
     () => (roomMode.textContent = getRoomModeByHash())
   );
+
 
   const localStream = await navigator.mediaDevices
     .getUserMedia({
@@ -61,9 +61,29 @@ const Peer = window.Peer;
       messages.textContent += `=== ${peerId} joined ===\n`;
     });
 
+    
     // Render remote stream for new peer join in the room
     room.on('stream', async stream => {
       const newVideo = document.createElement('video');
+      //var team_Sel  = document.getElementById("team_Sel");
+      if(team[0].checked){
+      newVideo.className = "main_chat_video_R";
+      }
+      else{
+      newVideo.className = "main_chat_video_B";
+      }
+      /*$(document).ready(function() {
+        $('input[type=radio][name=team]').change(function() {
+            if (this.value == 'RED') {
+              newVideo.className = "main_chat_video_R";
+                alert("Allot Thai Gayo Bhai");
+            }
+            else if (this.value == 'BLUE') {
+              newVideo.className = "main_chat_video_B";
+                alert("Transfer Thai Gayo");
+            }
+        });
+    });*/
       newVideo.srcObject = stream;
       newVideo.playsInline = true;
       // mark peerId to find it later at peerLeave event
