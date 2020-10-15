@@ -1,0 +1,32 @@
+.main_chat_body{
+    height: 700px;
+    border: 1px solid white;
+}
+.main_chat_Theme{
+    text-align: center;
+    border: 0px solid black;
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: bold;
+}
+.main_chat_room{
+    display: grid;
+}
+.main_chat_video_R{
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 130px;
+    border: 5px solid white;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.main_chat_video_B{
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 130px;
+    border: 5px solid blue;
+    margin-left: 3%;
+    margin-top: 1%;
+}
