@@ -4,32 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SkyWay - Room example</title>
+    <!--引入reset.css清除浏览器默认样式-->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!--引入<Main_chat_style class="css">-->
+    <link rel="stylesheet" href="../css/Main_chat_style.css" />
   </head>
-  <body>
+  <body style="background-color: #00B7C3;">
+  <div class="main_chat_body">
     <div class="container">
-      <h1 class="heading">Room example</h1>
-      <p class="note">
+      <div class="main_chat_Theme">
+        <span>Theme example</span>
+      </div>
+      <p style="display: none;">
         Change Room mode (before join in a room):
         <a href="#">mesh</a> / <a href="#sfu">sfu</a>
       </p>
-      <div class="room">
+      <form id="team_Sel" >
+        Please select team(before join in a room):
+        <input type="radio" name="team" id="RED" value="RED" />RED / 
+        <input type="radio" name="team" id="BLUE" value="BLUE" />BLUE
+        <input type="submit"  value="ok" />
+      </form>
+      <div class="main_chat_room">
         <div>
-          <video id="js-local-stream"></video>
-          <span id="js-room-mode"></span>:
-          <input type="text" placeholder="Room Name" id="js-room-id">
-          <button id="js-join-trigger">Join</button>
-          <button id="js-leave-trigger">Leave</button>
+          <video id="js-local-stream" class="main_chat_video_R"></video>  
         </div>
 
-        <div class="remote-streams" id="js-remote-streams"></div>
-
-        <div>
-          <pre class="messages" id="js-messages"></pre>
-          <input type="text" id="js-local-text">
-          <button id="js-send-trigger">Send</button>
+        <div id="js-remote-streams" >
         </div>
       </div>
+    <div>
+      <div>
+        <span id="js-room-mode"></span>:
+        <input type="text" placeholder="Room Name" id="js-room-id">
+        <button id="js-join-trigger">Join</button>
+        <button id="js-leave-trigger">Leave</button>
+      </div>
+      <div>
+        <pre class="messages" id="js-messages"></pre>
+        <input type="text" id="js-local-text">
+        <button id="js-send-trigger">Send</button>
+      </div>
     </div>
+    </div>
+  </div>
     <script src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
     <script src="../video key.js"></script>
     <script src="./VideoS.js"></script>
