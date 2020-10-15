@@ -1,0 +1,9 @@
+.my-video{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.their-video-style{
+    background-color: #111;
+    width: 400px;
+}
