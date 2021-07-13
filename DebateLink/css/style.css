@@ -1,0 +1,350 @@
+body{
+    font-family: "微软雅黑";
+}
+
+/*导航条*/
+.TNgvt_bar{
+    background: url(../img/TNgvt_bar3.png) repeat-x;
+    background-size: cover;
+    height: 43px;
+}
+
+
+
+/*导航条内文字*/
+.main_bar_size{
+    width: 1170px;
+    border: 0px solid #00A1D6;
+    margin: 0 auto;
+}
+/*左*/
+.TNgvt_bar_w{
+    margin-left: 0px;
+}
+.TNgvt_bar_w a:hover{
+    /*连带文字一起透明：filter:alpha(opacity:50);
+    opacity:0.5;
+     -moz-opacity:0.5;
+     -khtml-opacity: 0.5;*/
+    background-color:rgba(0,0,0,0.2);
+}
+/*主站标签内容*/
+
+.in a{
+    float: left;
+    padding-bottom: 16px;
+    padding-right: 7px;
+    padding-left: 7px;
+    font-family: "微软雅黑";
+    font-weight: 100;
+    font-size: 12px;
+    float: left;
+}
+.in p{
+    padding-top:14px ;
+    float: left;
+}
+.in_i{
+    width: 16px;
+    float: left;
+    padding-top: 11px;
+    padding-right: 4px;
+}
+
+/*ul内容*/
+.TNgvt_bar_w ul a{
+    padding-top: 14px;
+    padding-bottom: 17px;
+    padding-right: 7px;
+    padding-left: 7px;
+    font-family: "微软雅黑";
+    font-weight: 100;
+    font-size: 12px;
+    float: left;
+
+}
+
+.TNgvt_bar_w a{
+    color: #fff;
+}
+
+/*下载内容*/
+.download{
+    border: 0px solid #fff;
+    position: absolute;
+    margin-left:322px ;
+}
+.download a{
+    padding-bottom: 14px;
+    padding-right: 11px;
+    padding-left: 11px;
+    font-family: "微软雅黑";
+    font-weight: 100;
+    font-size: 12px;
+    float: left;
+}
+.download p{
+    padding-top:14px ;
+    float: left;
+}
+.dl_i{
+    width: 12px;
+    float: left;
+    padding-top: 13px;
+    padding-right: 4px;
+}
+
+.alert_dl_i{
+    display: none;/*在没有动作时隐藏*/
+    position: absolute;
+    top: 36px;
+    left: -113px;
+    width: 300px;
+    z-index: 10;
+}
+/*当鼠标覆盖到download标签时，显示图片*/
+.download:hover .alert_dl_i{
+    display: block;
+
+}
+
+/*右*/
+.test{
+    background-color: black;
+    width: 400px;
+    height: 300px;
+}
+.TNgvt_bar_l{
+    position: absolute;
+    margin-left: 995px;
+    color: #6d757a;
+    font-family: "微软雅黑";
+
+}
+.head{
+    margin-top: 5px;
+    border: 0px solid #000000;
+    position: relative;
+}
+.head_img{
+    width: 33px;
+    border-radius: 25px;
+}
+.alert_login{
+    z-index: 10;
+    border: 1px solid #e9eaed;
+    position: relative;
+    left: -165px;
+    margin-top: 3px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    font-size: 12px;
+    display: none;
+}
+.head:hover .alert_login{
+    display: block;
+}
+/*图片滚动部分*/
+.a_l_img{
+    margin-top: 15px;
+    background: url(../img/bg2.jpg);
+    width: 320px;
+
+}
+/*循环滚动*/
+#demo {
+    overflow:hidden;
+    width: 320px;
+
+}
+#demo img {
+}
+#indemo {
+    float: left;
+    width: 800%;
+}
+#demo1 {
+    float: left;
+}
+#demo2 {
+    float: left;
+}
+
+
+.btn_login{
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "微软雅黑";
+    margin-top:15px ;
+    margin-bottom:10px ;
+    background-color: #00a1d6;
+    width: 320px;
+    height: 45px;
+    border-radius: 4px;
+}
+.alert_login a :hover{
+    border-radius: 4px;
+    background-color: #00b5e5;
+}
+.btn_login p{
+    padding-top: 13px;
+    font-size: 16px;
+}
+.alert_login .register{
+    text-align: center;
+    font-size: 12px;
+    color: #000000;
+}
+.alert_login .register a{
+    color: #00A1D6;
+}
+
+/*历史&投稿*/
+.htr_c{
+    position: absolute;
+    top: 0;
+    border: 0px solid #FFFFFF;
+    width: 40px;
+    height: 29px;
+    margin-left: 47px;
+    padding-top: 14px;
+    text-align: center;
+}
+.history a{
+
+    font-family: "微软雅黑";
+    font-weight: 100;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.history a :hover{
+    background-color:rgba(0,0,0,0.2);
+}
+
+.upload{
+    position: absolute;
+    left: 95px;
+    top: 0;
+}
+.upload a{
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.ul_c{
+    padding-top: 14px;
+    background-color: #f45a8d;
+    text-align: center;
+    width: 68px;
+    height: 32px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.upload a :hover{
+    background-color: #fb7299;
+}
+
+/*banner结束-主体部分开始*/
+.main_body{
+    border: 0px solid #000;
+    width: 1170px;
+    margin: 0 auto;
+    overflow:hidden;
+    padding-bottom: 200px;
+}
+/*讨论卡部分*/
+.card{
+    width: 565px;
+    height: 450px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: #f7f9f9;
+    border: 1px solid #d3cece;
+    border-radius:10px;
+    /*box-shadow: 2px 2px 5px #bac9ce;*/
+    float: left;
+}
+.card:hover{
+    background-color: #eff1f1;
+}
+
+/*讨论卡上的主题显示*/
+.card .TAI{
+    width: 565px;
+    border: 0px solid #000000;
+}
+.card .theme{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 400px;
+    height: 35px;
+    border: 0px solid #000000;
+    font-size: 30px;
+    color: #5d5c5c;
+    float: left;
+}
+.card .icon_img{
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    float: right;
+}
+
+.card .suoluetu{
+    margin-top:80px;
+    margin-left: 32px;
+}
+.card .suoluetu_img{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid #d3cece;
+}
+.card .other{
+    margin-top: 10px;
+}
+.card .other a{
+    float: left;
+}
+.card .other .more{
+    margin-right: 30px;
+    float: right;
+}
+.card .other a p{
+    margin-left: 3px;
+    color: #5d5c5c;
+    float: right;
+}
+.card .other .other_img_f{
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    margin-top: 5px;
+    float: left;
+}
+.card .other .other_img{
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+/*知识点：父div选择后 子div产生不同的变化*/
+.card .other a:hover .other_img_f{
+    background-color: rgba(0, 181, 229, 0.34);
+}
+.card .other a:hover p{
+    color: #00b5e5;
+}
+/*知识点到此结束*/
+.card .other a{
+    margin-left: 40px;
+}
+
+.card .other .good p{
+    padding-top: 13px;
+}
+.card .other .comments p{
+    padding-top: 13px;
+}
